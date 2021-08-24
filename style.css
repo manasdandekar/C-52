@@ -1,0 +1,70 @@
+h1 {
+    color : #1273f2;
+    margin-left: 30px ;
+}                 
+
+.Portfolio{
+    color: #800080;
+    background-color: #00ff00;
+    display:flex;
+    justify-content: space-between;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #012345;
+}
+
+h2{
+    text-align : center;
+    color : #abcdef;
+}
+
+p{
+    text-align : center;
+    color : #ffffff;
+}
+
+.grid>.item>p{
+    text-align : center;
+    color : #000000;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+body{
+    background-color: #808080;
+}
+
+.Portfolio * {
+    border: solid;
+}
+
+.Portfolio a {
+    margin-right: 30px;
+}
+
+.item {
+    position: relative;
+}
+
+.item p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+.item:hover p{
+    opacity: 1;
+} 
+
+.item:hover img{
+    opacity: 0.33;
+}
